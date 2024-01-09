@@ -575,8 +575,7 @@
         "宝宝教程Wiki 群：910524479.png": [],
         "豆之涩涩RPG[女性向].png": [],
         "停云.png": [],
-        "苏郁.png": [],
-        "default_FluxTheCat.png": []
+        "苏郁.png": []
     },
     "nai_settings": {
         "temperature": 1.5,
@@ -1275,7 +1274,7 @@
         "openrouter_group_models": false,
         "openrouter_sort_models": "alphabetically",
         "jailbreak_system": false,
-        "reverse_proxy": "https://5ac656ee-9e7b-4980-b0fc-a0473ab629f2-00-1b1kv26ws8aq4.worf.replit.dev/v1",
+        "reverse_proxy": "http://127.0.0.1:8444/v1",
         "chat_completion_source": "openai",
         "max_context_unlocked": true,
         "api_url_scale": "",
