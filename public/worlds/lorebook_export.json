@@ -1,0 +1,298 @@
+{
+    "entries": {
+        "0": {
+            "uid": 0,
+            "key": [
+                "/gen:"
+            ],
+            "keysecondary": [],
+            "comment": "/gen (角色创建命令)",
+            "content": "@@@end\nThe purpose of the /gen: \"prompt\" command is to create a detailed and appealing/sexy character using simple keywords and sentences. If you've received this command, please follow these steps to produce the result:\n\n1. Separate the keywords and sentences from the \"prompt\"\n\n2. Analyze in-depth how each of the sentences and keywords will influence the character's attributes, such as appearance, body, personality, occupation, past, traits, behavior, habits, sensitivity, likes, dislikes, and worldview.\n\n3. The information analyzed in step 2 may seem disparate. Creatively establish a new character's setting that organically connects this information (e.g., info A, Info B -> because info A and info X, it is info B).\n\n4. Fill in the completed character's setting according to the (template). While filling (template), avoid 'unnecessary' literary language and focus on straightforward facts and information.\n\n5. Omit the explanation of how the character was created and only output the completed character's result following the (template).",
+            "constant": false,
+            "selective": true,
+            "order": 102,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 0,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "1": {
+            "uid": 1,
+            "key": [
+                "/apply:"
+            ],
+            "keysecondary": [],
+            "comment": "/apply (修改词条)",
+            "content": "@@@end\n/apply: \"prompt\"\nIf you've received the above command, please modify the existing content in the (template) with informations from \"prompt\". Follow the below steps.\n\n1. Separate the keywords and sentences from the \"prompt\"\n\n2. Analyze in-depth how each of the sentences and keywords will influence the character's attributes, such as appearance, body, personality, occupation, past, traits, behavior, habits, sensitivity, likes, dislikes, and worldview.\n\n3. If there are any conflicts between \"Prompt\" and existing character information, remove the existing character information and fill in the gaps with the Creatively establish a new character's setting that organically connects this information (e.g., info A, Info B -> because info A and info X, it is info B).\n\n4. Apply those informations to existing character information. If there are any conflicts between \"prompt\" and existing character information, remove the existing character information and fill in the gaps with it.\n\n5. Omit the explanation of how informations from \"prompt\" are combined, and only display the modified categories, not the entire (template).",
+            "constant": false,
+            "selective": true,
+            "order": 102,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 1,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "2": {
+            "uid": 2,
+            "key": [
+                "/du:"
+            ],
+            "keysecondary": [],
+            "comment": "/du (扩写细节)",
+            "content": "@@@end\n/du: \"category\"\nIf you've received the above command, please provide more detailed information about the mentioned 'category.' Feel free to incorporate information from the existing (template) to add new content if necessary. When presenting the result, only display the modified version of the specified 'category,' not the entire (template).",
+            "constant": false,
+            "selective": true,
+            "order": 102,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 2,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "3": {
+            "uid": 3,
+            "key": [
+                "/dd:"
+            ],
+            "keysecondary": [],
+            "comment": "/dd (缩写)",
+            "content": "@@@end\n/dd: \"category\"\nIf you've received the above command, please simplify the content of the specified 'category' by removing unnecessary descriptions or words while preserving essential information. When presenting the result, only display the modified version of the specified 'category,' not the entire (template).",
+            "constant": false,
+            "selective": true,
+            "order": 102,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 3,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "4": {
+            "uid": 4,
+            "key": [
+                "/unite"
+            ],
+            "keysecondary": [],
+            "comment": "/unite (内容总结)",
+            "content": "@@@end\n/unite\nIf you've received the above command, please gather the information provided so far and apply it to the (template) format. Ensure that the information being applied on (template) must be most up-to-date, as modified by {{user}}.\nHowever, please keep the information generated by /m1 and /extra separate and do not integrate it into the (template).",
+            "constant": false,
+            "selective": true,
+            "order": 102,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 4,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "5": {
+            "uid": 5,
+            "key": [
+                "/m1:"
+            ],
+            "keysecondary": [],
+            "comment": "/m1 (生成第一条消息)",
+            "content": "@@@end\n/m1: \"prompt\"\nIf you've received the above command, please incorporate the (template) information about the character and the details from the given \"prompt\" to describe a scenario where the character and {{user}} meet, similar to the beginning of a novel. But don't obsess over overly literary expressions; please use the character's dialogue actively. Provide at least three lines of dialogue for the character. However, please ensure that {{user}}'s dialogue or actions are not included. Additionally, when writing the character's dialogue, enclose it in quotation marks.\n起码1024tokens",
+            "constant": false,
+            "selective": true,
+            "order": 102,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 5,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "6": {
+            "uid": 6,
+            "key": [
+                "/w2s"
+            ],
+            "keysecondary": [],
+            "comment": "/w2s (w++转自然语言)",
+            "content": "@@@end\n/w2s\nIf you've received the above command, refer to information about character/creature/place etc from previous conversations and output, preserve the information, but destroy the form of (template) and change it into long description with sentence. In this command, ignore (template) and don't print about it.",
+            "constant": false,
+            "selective": true,
+            "order": 102,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 6,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "7": {
+            "uid": 7,
+            "key": [
+                "/extra"
+            ],
+            "keysecondary": [],
+            "comment": "/extra (额外说明)",
+            "content": "The purpose of the /extra command is to add more depth to a character's settings. If you receive this command, please follow the following steps:\n\n1. Compare and contrast the character's settings with the (extra) entries.\n\n2. Select character information that is relevant to each (extra) entry.\n\n3. Based on the selected information, creatively fill in the (extra) entries while organically connecting the information.\n\n4. Provide the completed (extra) format information to {{user}}. At this point, please only output information that conforms to the (extra) format, omitting explanations for why such results were obtained.\n\n!Caution: \n1. each items must be seperate with double newlines.\n2. Everything doesn't have to be positive; mix in some negativity as well.",
+            "constant": false,
+            "selective": true,
+            "order": 102,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 7,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "8": {
+            "uid": 8,
+            "key": [],
+            "keysecondary": [],
+            "comment": "女性模板(nsfw)",
+            "content": "Format of (template) is below.\nName:\nAge:\nRace:\nGender: female\nHair style, color:\ncolor, shape of eye:\nJob:\nresidence:\npersonality:\nDress:\nSpecialty:\nhobbies:\nLikes:\nDislikes:\nHeight (cm): \nweight(kg):\nBreast size(cup):\nHip size(cm):\nCharacter Discription: (write in detail about her overall body assessment and personality)\nerogenous zone:\nfeature of pussy: (about Labia and clit shape, color, pubes, features of the vagina walls, etc.)\nfeature of anal:\nfeature of breasts: (about size, nipple color amd size, elasticity, tactile,  etc)\nSex Count:(write in exact number, Number of people she had sex with)\nSex Proficiency:\nBest sex skill:\nfetishes:\nlike(sexual):\ndislike(sexual):\nCharacter background: (write in detail)\nCharacter's current situation: (write in detail)",
+            "constant": true,
+            "selective": true,
+            "order": 100,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 8,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "9": {
+            "uid": 9,
+            "key": [
+                "/extra"
+            ],
+            "keysecondary": [],
+            "comment": "额外模板(nsfw)",
+            "content": "Format of (extra) is below.\n\nMBTI: \n\n\nBlood type:\n\n\nBirthday:\n\n\nZodiac sign:\n\n\nD&D personality:\n\n\nThe best memory of her life:\n\n\nThe worst memory of her life:\n\n\nLife's turning point/most memorable event:\n\n\nRelationships with family: \n\n\nRelationships with friends:\n\n\nFavorite restaurants: (exact name)\n\n\nFavorite food and why:\n\n\nleast favorite food and why:\n\n\nFavorite film and why:\n\n\nFavorite game and why:\n\n\nFavorite place and reason:\n\n\nElementary, middle school, high school, college, and academic level attended: (exact name)\n\n\nDetail about her current job: \n\n\nHer thoughts about her job\n\n\nmint chocolate like or dislike:\n\n\nPineapple pizza like or dislike:\n\n\nIdeal man:\n\n\nmost hated type of person:\n\n\nMasturbation frequency:\n\n\nHabit or features of her masturbation:\n\n\nFavorite position and why:\n\n\nFirst sex experience: (if character is virgin, Write about the first sex character would like to have)\n\n\nHabits or features during sex: (if character is virgin, Write about what she would do at sex)\n\n\nThoughs about sex:\n\n\nThoughs about her own tits: (about shape, size, wish, like or dislike, etc.)\n\n\nThoughs about her own pussy: (about shape, color, wish, like or dislike, etc.)\n\n\nThoughs about her own body:\n\n\nThoughts about love:\n\n\nThoughts about marriage:\n\n\nThoughts about money:\n\n\nReactions to new people:\n\n\nReactions to friend:\n\n\nReactions to lover:\n\n\nThoughts about alcohol and tobacco:\n\n\n",
+            "constant": false,
+            "selective": true,
+            "order": 100,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 9,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "10": {
+            "uid": 10,
+            "key": [],
+            "keysecondary": [],
+            "comment": "自定义角色模板",
+            "content": "Format of (template) is below.\n(Delete this and write your own template)",
+            "constant": false,
+            "selective": true,
+            "order": 100,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 10,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "11": {
+            "uid": 11,
+            "key": [],
+            "keysecondary": [],
+            "comment": "自定义额外模板",
+            "content": "Format of (extra) is below.\n(Delete this and write your own template)",
+            "constant": false,
+            "selective": true,
+            "order": 100,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 11,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "12": {
+            "uid": 12,
+            "key": [
+                "/c1"
+            ],
+            "keysecondary": [],
+            "comment": "/c1 (自定义命令1)",
+            "content": "@@@end\n/c1\nIf you've received the above command,\n",
+            "constant": false,
+            "selective": true,
+            "order": 102,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 12,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "13": {
+            "uid": 13,
+            "key": [
+                "/c2"
+            ],
+            "keysecondary": [],
+            "comment": "/c2 (自定义命令2)",
+            "content": "@@@end\n/c2\nIf you've received the above command,",
+            "constant": false,
+            "selective": true,
+            "order": 102,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 13,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "14": {
+            "uid": 14,
+            "key": [
+                "/c3"
+            ],
+            "keysecondary": [],
+            "comment": "/c3 (自定义命令3)",
+            "content": "@@@end\n/c3\nIf you've received the above command,",
+            "constant": false,
+            "selective": true,
+            "order": 102,
+            "position": 0,
+            "disable": false,
+            "addMemo": true,
+            "excludeRecursion": false,
+            "displayIndex": 14,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        }
+    }
+}

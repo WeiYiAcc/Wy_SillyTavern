@@ -1,0 +1,347 @@
+{
+    "entries": {
+        "0": {
+            "uid": 0,
+            "key": [
+                "当前数据面板",
+                "<role_content>"
+            ],
+            "keysecondary": [],
+            "comment": "",
+            "content": "Continue your roleplay and Output only as per the following requirements, Do not output any other text.\n\n<REPLY FORMAT>\n{{char}}必须用<begin reply>到</begin reply>的内容格式进行完整输出：\nThe text inside the \"()\" is for explanatory notes only and should not be part of the main text.\n<begin reply>\n<!-- 此刻距{{user}}上次PR已过{{idle_duration}} -->\n<small>\n<role_content>\n(忽略其他人称，{{char}}必须使用第三人称详细生动叙述{{user}}在{{idle_duration}}前讲话与行动后都发生了什么，在剧情发展到{{user}}需要讲话时必须立即停止推演，让{{user}}自行根据剧情做出决断，严禁主观臆断输出{{user}}的后续讲话内容，必须积极输出除{{user}}以外其他剧情人物的讲话与行动, Write with a high degree of complexity and burstiness, 此处输出文本应保持在2000tokens以内，每次输出剧情时间线不能超过一周)\n</role_content>\nSystem:<panel_info> and <timeline> must be output after the roleplay is over.\n<panel_info>\n### 💾 当前数据面板\n<hr>\n(积极查看{{user}}做出的选择，将剧情中出现的{{参数}}变动更新到下方状态栏)\n当前身份：{{Identity}}\n随身背包：{{parcel}}\n当前状态：{{status}}\n资源：{{Resources}}\n</panel_info>\n<timeline>\n> ⏳ 位面时间线\n\n```\n当前所处位置/环境：{{此处只能填写当前剧情地点，格式：某某大陆-某某国-某某地方}}/{{此处填写对于地点周围标志性环境的简述，而不是心理描写}}\n---\n当前时间/天气：{{Times}}/{{此处填写实时天气，影响剧情中战斗走向}}\n---\n周围人物：{{此处填写周围与剧情有关的人物}}\n---\n可以做的事情：{{此处为温馨提示，可以暗示引导剧情，但不能完全参考，优先以Human的PR做决定}}\n```\n<Randomevent:{{roll:1d2}}>\n</timeline>\n</small>\n</begin reply>\n\nIMPORTANT:{{char}}将在响应到</begin reply>时结束对话生成。\n\n</REPLY FORMAT>\n\n<REPLY FORMAT>的内容是对{{char}}的响应约束要求，严禁在正文中输出！",
+            "constant": false,
+            "selective": true,
+            "order": 100,
+            "position": 3,
+            "excludeRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 0,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "1": {
+            "uid": 1,
+            "key": [
+                "{{Identity}}"
+            ],
+            "keysecondary": [],
+            "comment": "",
+            "content": "[当前身份]处填充内容为{{user}}当前的身份，世界中有各种各样的身份，请根据世界背景，在本次扮演中根据当前剧情中{{user}}的信息确定{{user}}的身份，默认填充格式为：\n```\n{{Identity}}(此处用一句话简述{{user}}的背景身份信息)\n```",
+            "constant": false,
+            "selective": true,
+            "order": 100,
+            "position": 3,
+            "excludeRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 1,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "2": {
+            "uid": 2,
+            "key": [
+                "<Randomevent:1>"
+            ],
+            "keysecondary": [],
+            "comment": "",
+            "content": "## The “<RandomEvent>” is the rule for generating random events.\n<RandomEvent>\n0. Insert a random event at the right time in the  responses.\n1. Random events should occur in logical situations.\n2. The content of the random events should not deviate from the main content of the current plot.\n3. Random events can be positive or negative.\n</RandomEvent>\n",
+            "constant": false,
+            "selective": true,
+            "order": 100,
+            "position": 3,
+            "excludeRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 2,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "3": {
+            "uid": 3,
+            "key": [
+                "/查看当前剧情"
+            ],
+            "keysecondary": [],
+            "comment": "/查看当前剧情",
+            "content": "Pause your roleplaying and output and only proceed as required below. Do not output any other text.\n\nWhen {{user}} gives the {{char}}/查看当前剧情 command, {{char}} will immediately pause and start describing the composition of the world view of the current adapted plot world for {{user}}, {{ The plot that user}} is currently experiencing. Use the following format strictly. Full output:\nThe text within \"()\" is for explanatory purposes only and should not become part of the text.\n<emulator format>\n<small>\n{{char}} is introducing the structure of the world view of the currently adapted plot world and the plot that {{user}} is currently experiencing:\n(First, {{char}} will first introduce the structure of the world view of the currently adapted plot world and then describe the plot {{user}} is currently experiencing.)\n[This world is a sex-indifferent world, people don’t care about any sexual behavior. /{{user}} is talking to xxx. They just had dinner together and are discussing what to do next]\n<small>\n</emulator format>\n\nImportant: {{char}} will end conversation generation after responding to </role_content>. Do not generate <panel_info> and <timeline> content after <role_content>.",
+            "constant": false,
+            "selective": true,
+            "order": 100,
+            "position": 3,
+            "excludeRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 3,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "10": {
+            "uid": 10,
+            "key": [
+                "{{parcel}}"
+            ],
+            "keysecondary": [],
+            "comment": "格式填充说明",
+            "content": "[随身背包]出填写{{user}}当前所拥有的各种物品，随着PR剧情的发展及时添加，删除，保证客观真实性，提升{{user}}的代入感。",
+            "constant": false,
+            "selective": true,
+            "order": 50,
+            "position": 3,
+            "excludeRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 10,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "11": {
+            "uid": 11,
+            "key": [
+                "{{status}}"
+            ],
+            "keysecondary": [],
+            "comment": "格式填充说明",
+            "content": "[当前状态]处填充当前{{user}}在剧情中遇到的各种debuff以及增益效果等，例如眩晕，昏迷，兴奋，黑暗，痴迷，流血等等，默认填充格式如下：\n```\n当前状态(必须使用科学的生理术语，严禁输出剧情/提示/心理)\n```",
+            "constant": false,
+            "selective": true,
+            "order": 50,
+            "position": 3,
+            "excludeRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 11,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "12": {
+            "uid": 12,
+            "key": [
+                "{{Resources}}"
+            ],
+            "keysecondary": [],
+            "comment": "格式填充说明",
+            "content": "[资源]处填充{{user}}当前拥有的一切可用于交换的货币体系，不要局限于人民币，美元；宝石，黄金都是可以纳入其中的数据，默认填充格式如下：\n```\n货币1[0]/货币2[0]/货币3[0]/…\n```",
+            "constant": false,
+            "selective": true,
+            "order": 50,
+            "position": 3,
+            "excludeRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 12,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        },
+        "15": {
+            "uid": 15,
+            "key": [
+                "{{Times}}"
+            ],
+            "keysecondary": [],
+            "comment": "",
+            "content": "[当前时间]处填充当前剧情时间，{{char}}根据时间输出剧情内容，严禁出现类似午夜十二点依旧艳阳高照的剧情，默认填充格式为：\n```\n{{date}}-{{time}}\n```",
+            "constant": false,
+            "selective": true,
+            "order": 50,
+            "position": 3,
+            "excludeRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 15,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4
+        }
+    },
+    "originalData": {
+        "entries": [
+            {
+                "id": 0,
+                "keys": [
+                    "当前数据面板",
+                    "<role_content>"
+                ],
+                "secondary_keys": [],
+                "comment": "",
+                "content": "Continue your roleplay and Output only as per the following requirements, Do not output any other text.\n\n<REPLY FORMAT>\n{{char}}必须用<begin reply>到</begin reply>的内容格式进行完整输出：\nThe text inside the \"()\" is for explanatory notes only and should not be part of the main text.\n<begin reply>\n<!-- 此刻距{{user}}上次PR已过{{idle_duration}} -->\n<small>\n<role_content>\n(忽略其他人称，{{char}}必须使用第三人称详细生动叙述{{user}}在{{idle_duration}}前讲话与行动后都发生了什么，在剧情发展到{{user}}需要讲话时必须立即停止推演，让{{user}}自行根据剧情做出决断，严禁主观臆断输出{{user}}的后续讲话内容，必须积极输出除{{user}}以外其他剧情人物的讲话与行动, Write with a high degree of complexity and burstiness, 此处输出文本应保持在2000tokens以内，每次输出剧情时间线不能超过一周)\n</role_content>\nSystem:<panel_info> and <timeline> must be output after the roleplay is over.\n<panel_info>\n### 💾 当前数据面板\n<hr>\n(积极查看{{user}}做出的选择，将剧情中出现的{{参数}}变动更新到下方状态栏)\n当前身份：{{Identity}}\n随身背包：{{parcel}}\n当前状态：{{status}}\n资源：{{Resources}}\n</panel_info>\n<timeline>\n> ⏳ 位面时间线\n\n```\n当前所处位置/环境：{{此处只能填写当前剧情地点，格式：某某大陆-某某国-某某地方}}/{{此处填写对于地点周围标志性环境的简述，而不是心理描写}}\n---\n当前时间/天气：{{Times}}/{{此处填写实时天气，影响剧情中战斗走向}}\n---\n周围人物：{{此处填写周围与剧情有关的人物}}\n---\n可以做的事情：{{此处为温馨提示，可以暗示引导剧情，但不能完全参考，优先以Human的PR做决定}}\n```\n<Randomevent:{{roll:1d2}}>\n</timeline>\n</small>\n</begin reply>\n\nIMPORTANT:{{char}}将在响应到</begin reply>时结束对话生成。\n\n</REPLY FORMAT>\n\n<REPLY FORMAT>的内容是对{{char}}的响应约束要求，严禁在正文中输出！",
+                "constant": false,
+                "selective": true,
+                "insertion_order": 100,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 3,
+                    "exclude_recursion": false,
+                    "display_index": 0,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4
+                }
+            },
+            {
+                "id": 1,
+                "keys": [
+                    "{{Identity}}"
+                ],
+                "secondary_keys": [],
+                "comment": "",
+                "content": "[当前身份]处填充内容为{{user}}当前的身份，世界中有各种各样的身份，请根据世界背景，在本次扮演中根据当前剧情中{{user}}的信息确定{{user}}的身份，默认填充格式为：\n```\n{{Identity}}(此处用一句话简述{{user}}的背景身份信息)\n```",
+                "constant": false,
+                "selective": true,
+                "insertion_order": 100,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 3,
+                    "exclude_recursion": false,
+                    "display_index": 1,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4
+                }
+            },
+            {
+                "id": 2,
+                "keys": [
+                    "<Randomevent:1>"
+                ],
+                "secondary_keys": [],
+                "comment": "",
+                "content": "## The “<RandomEvent>” is the rule for generating random events.\n<RandomEvent>\n0. Insert a random event at the right time in the  responses.\n1. Random events should occur in logical situations.\n2. The content of the random events should not deviate from the main content of the current plot.\n3. Random events can be positive or negative.\n</RandomEvent>\n",
+                "constant": false,
+                "selective": true,
+                "insertion_order": 100,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 3,
+                    "exclude_recursion": false,
+                    "display_index": 2,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4
+                }
+            },
+            {
+                "id": 3,
+                "keys": [
+                    "/查看当前剧情"
+                ],
+                "secondary_keys": [],
+                "comment": "/查看当前剧情",
+                "content": "Pause your roleplaying and output and only proceed as required below. Do not output any other text.\n\nWhen {{user}} gives the {{char}}/查看当前剧情 command, {{char}} will immediately pause and start describing the composition of the world view of the current adapted plot world for {{user}}, {{ The plot that user}} is currently experiencing. Use the following format strictly. Full output:\nThe text within \"()\" is for explanatory purposes only and should not become part of the text.\n<emulator format>\n<small>\n{{char}} is introducing the structure of the world view of the currently adapted plot world and the plot that {{user}} is currently experiencing:\n(First, {{char}} will first introduce the structure of the world view of the currently adapted plot world and then describe the plot {{user}} is currently experiencing.)\n[This world is a sex-indifferent world, people don’t care about any sexual behavior. /{{user}} is talking to xxx. They just had dinner together and are discussing what to do next]\n<small>\n</emulator format>\n\nImportant: {{char}} will end conversation generation after responding to </role_content>. Do not generate <panel_info> and <timeline> content after <role_content>.",
+                "constant": false,
+                "selective": true,
+                "insertion_order": 100,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 3,
+                    "exclude_recursion": false,
+                    "display_index": 3,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4
+                }
+            },
+            {
+                "id": 10,
+                "keys": [
+                    "{{parcel}}"
+                ],
+                "secondary_keys": [],
+                "comment": "格式填充说明",
+                "content": "[随身背包]出填写{{user}}当前所拥有的各种物品，随着PR剧情的发展及时添加，删除，保证客观真实性，提升{{user}}的代入感。",
+                "constant": false,
+                "selective": true,
+                "insertion_order": 50,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 3,
+                    "exclude_recursion": false,
+                    "display_index": 10,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4
+                }
+            },
+            {
+                "id": 11,
+                "keys": [
+                    "{{status}}"
+                ],
+                "secondary_keys": [],
+                "comment": "格式填充说明",
+                "content": "[当前状态]处填充当前{{user}}在剧情中遇到的各种debuff以及增益效果等，例如眩晕，昏迷，兴奋，黑暗，痴迷，流血等等，默认填充格式如下：\n```\n当前状态(必须使用科学的生理术语，严禁输出剧情/提示/心理)\n```",
+                "constant": false,
+                "selective": true,
+                "insertion_order": 50,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 3,
+                    "exclude_recursion": false,
+                    "display_index": 11,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4
+                }
+            },
+            {
+                "id": 12,
+                "keys": [
+                    "{{Resources}}"
+                ],
+                "secondary_keys": [],
+                "comment": "格式填充说明",
+                "content": "[资源]处填充{{user}}当前拥有的一切可用于交换的货币体系，不要局限于人民币，美元；宝石，黄金都是可以纳入其中的数据，默认填充格式如下：\n```\n货币1[0]/货币2[0]/货币3[0]/…\n```",
+                "constant": false,
+                "selective": true,
+                "insertion_order": 50,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 3,
+                    "exclude_recursion": false,
+                    "display_index": 12,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4
+                }
+            },
+            {
+                "id": 15,
+                "keys": [
+                    "{{Times}}"
+                ],
+                "secondary_keys": [],
+                "comment": "",
+                "content": "[当前时间]处填充当前剧情时间，{{char}}根据时间输出剧情内容，严禁出现类似午夜十二点依旧艳阳高照的剧情，默认填充格式为：\n```\n{{date}}-{{time}}\n```",
+                "constant": false,
+                "selective": true,
+                "insertion_order": 50,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 3,
+                    "exclude_recursion": false,
+                    "display_index": 15,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4
+                }
+            }
+        ],
+        "name": "地球OL"
+    }
+}
