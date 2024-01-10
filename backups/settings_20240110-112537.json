@@ -1176,7 +1176,7 @@
                     },
                     {
                         "identifier": "f18bea1d-155b-4a4d-803f-2ceba4028dd9",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "1f5c7002-7066-424b-b894-ede50ca08d0a",
@@ -1275,7 +1275,7 @@
         "openrouter_group_models": false,
         "openrouter_sort_models": "alphabetically",
         "jailbreak_system": false,
-        "reverse_proxy": "http://127.0.0.1:8444/v1",
+        "reverse_proxy": "https://5ac656ee-9e7b-4980-b0fc-a0473ab629f2-00-1b1kv26ws8aq4.worf.replit.dev/v1",
         "chat_completion_source": "openai",
         "max_context_unlocked": true,
         "api_url_scale": "",
