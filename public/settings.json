@@ -643,7 +643,7 @@
         "count_pen": 0,
         "top_p_openai": 1,
         "top_k_openai": 0,
-        "stream_openai": false,
+        "stream_openai": true,
         "openai_max_context": 64000,
         "openai_max_tokens": 4000,
         "wrap_in_quotes": false,
@@ -1172,7 +1172,7 @@
                     },
                     {
                         "identifier": "1d52a419-767b-44d3-b1a0-577907e6eb49",
-                        "enabled": true
+                        "enabled": false
                     },
                     {
                         "identifier": "f18bea1d-155b-4a4d-803f-2ceba4028dd9",
