@@ -1,7 +1,6 @@
 port: 8001
 whitelist:
   - 127.0.0.1
-  - 0.0.0.0
 whitelistMode: false
 basicAuthMode: true
 basicAuthUser:
