@@ -41,7 +41,7 @@
     "scenario_format": "[Circumstances and context of the dialogue: {{scenario}}]",
     "personality_format": "[{{char}}'s personality: {{personality}}]",
     "group_nudge_prompt": "[Write the next reply only as {{char}}.]",
-    "stream_openai": true,
+    "stream_openai": false,
     "prompts": [
         {
             "name": "📐Main Prompt 主提示（可在角色卡高级定义自定义）",
@@ -449,11 +449,11 @@
             "injection_depth": 4
         },
         {
-            "identifier": "fe57eac6-03e5-49c1-8dd7-e25c9bde7df4",
+            "identifier": "c03d72c0-5aef-4cc9-bb3b-66dfa0880071",
             "system_prompt": false,
             "enabled": false,
             "marker": false,
-            "name": "性描写【油腻】",
+            "name": "[性描写]油腻",
             "role": "system",
             "content": "Here are the key points to keep in mind when a sexual episode occurs: \n<Sexual_Writing>\n性爱描写:多重词汇修饰\n女性角色:身体部位,外貌,服装,视觉,气味,质地,味道,声音,触感,液体,感受,行为,反应,情绪,生殖器\n要求:冗长,详细,生动,形象,追求细节\n身体部位:大量使用脏词描述,淫靡,形象,生动,凸显快感\n脏词:雌,肥,肉,臭,贱,淫,痴,孕,奸,浓\n运用举例:雌熟肉腿,散发让雄性勃起雌香的腋下,卷绕肥屌肉棒的蛇舌,下贱淫痴的吸屌榨精,鸡巴套子级别的肥熟雌厚臀,骚痴的臀浪,淫焖雌熟肉尻,温热的浓精,肥美雌熟的乳肉,噗嗤,啪啪,齁啊啊,乳汁流落,淫水泛滥,潮吹喷水\n</Sexual_Writing>\n",
             "injection_position": 1,
@@ -481,10 +481,6 @@
                     "enabled": true
                 },
                 {
-                    "identifier": "270cf29c-24b5-428c-8b80-b6e052ac3421",
-                    "enabled": false
-                },
-                {
                     "identifier": "c6de0aad-17a4-46cf-a002-a81ddcf03f70",
                     "enabled": true
                 },
@@ -494,7 +490,7 @@
                 },
                 {
                     "identifier": "worldInfoBefore",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "personaDescription",
@@ -530,10 +526,6 @@
                 },
                 {
                     "identifier": "0b8ee749-f8ff-497e-bafd-3fc60a8a4180",
-                    "enabled": true
-                },
-                {
-                    "identifier": "fe57eac6-03e5-49c1-8dd7-e25c9bde7df4",
                     "enabled": true
                 },
                 {
@@ -578,7 +570,7 @@
                 },
                 {
                     "identifier": "f18bea1d-155b-4a4d-803f-2ceba4028dd9",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "1f5c7002-7066-424b-b894-ede50ca08d0a",
@@ -590,6 +582,10 @@
                 },
                 {
                     "identifier": "68180239-ab94-4a79-86a2-13bd94a38511",
+                    "enabled": true
+                },
+                {
+                    "identifier": "c03d72c0-5aef-4cc9-bb3b-66dfa0880071",
                     "enabled": true
                 },
                 {
@@ -610,7 +606,7 @@
                 },
                 {
                     "identifier": "jailbreak",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "708cbfb3-b2d5-44ed-a04a-3669ac82c95c",

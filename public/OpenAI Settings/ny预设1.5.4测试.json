@@ -5,7 +5,17 @@
     "windowai_model": "",
     "openrouter_model": "OR_Website",
     "openrouter_use_fallback": true,
+    "openrouter_force_instruct": false,
+    "openrouter_group_models": false,
+    "openrouter_sort_models": "alphabetically",
     "ai21_model": "j2-ultra",
+    "mistralai_model": "mistral-medium",
+    "custom_model": "",
+    "custom_url": "",
+    "custom_include_body": "",
+    "custom_exclude_body": "",
+    "custom_include_headers": "",
+    "google_model": "gemini-pro",
     "temperature": 1,
     "frequency_penalty": 1.99,
     "presence_penalty": 0.87,
@@ -24,9 +34,13 @@
     "new_example_chat_prompt": "[Start a new Chat]",
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
-    "legacy_streaming": true,
+    "reverse_proxy": "http://127.0.0.1:8444/v1",
+    "proxy_password": "password",
     "max_context_unlocked": true,
     "wi_format": "[Details of the fictional world the RP is set in:\n{0}]\n",
+    "scenario_format": "[Circumstances and context of the dialogue: {{scenario}}]",
+    "personality_format": "[{{char}}'s personality: {{personality}}]",
+    "group_nudge_prompt": "[Write the next reply only as {{char}}.]",
     "stream_openai": true,
     "prompts": [
         {
@@ -294,6 +308,17 @@
             "name": "测试用文风",
             "role": "system",
             "content": "<WritingStyle>\n基础:\n-以{{char}}视角，用第二人称输出，保持逻辑通顺避免推进剧情，避免用词重复，专注于细致描写。\n-在贴合角色设定的前提下，对每个动作和面部神态进行放大观察和富有感情的极致细腻描写，确保细节完全符合角色设定。\n角色描写:\n-感知:从视、听、嗅、触、味五个感官出发，进行对物理感知的丰富描写。\n-根据解剖学结构，详细描述角色行为时身体部位的状态。\n-聚焦于角色每个动作+面部神态的细节描写，对角色的神态刻画细致入微。\n文字风格要求:\n-细腻优美的语言：描绘角色、环境和事件时，采用详细、清晰、生动的描述，用词独特且产生视觉效果。\n-张力和悬念感\n-角度：尝试从不同角度描写人事物。\n文学品质优化:\n-修辞手法：避免直接比喻/重复修辞，运用多类型修辞，强调真实性、艺术感、诗意，使文本更具文学品质。\n-情节叙述：以小说风格优美、流畅叙述情节。 \n-营造沉浸感，角色与环境互动(50到80字)。\n-严禁直白枯燥的陈述。\n</WritingStyle>"
+        },
+        {
+            "identifier": "cd061390-37e7-47dd-aa18-1e4aecb8ca35",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "[性描写]油腻",
+            "role": "system",
+            "content": "Here are the key points to keep in mind when a sexual episode occurs: \n<Sexual_Writing>\n性爱描写:多重词汇修饰\n女性角色:身体部位,外貌,服装,视觉,气味,质地,味道,声音,触感,液体,感受,行为,反应,情绪,生殖器\n要求:冗长,详细,生动,形象,追求细节\n身体部位:大量使用脏词描述,淫靡,形象,生动,凸显快感\n脏词:雌,肥,肉,臭,贱,淫,痴,孕,奸,浓\n运用举例:雌熟肉腿,散发让雄性勃起雌香的腋下,卷绕肥屌肉棒的蛇舌,下贱淫痴的吸屌榨精,鸡巴套子级别的肥熟雌厚臀,骚痴的臀浪,淫焖雌熟肉尻,温热的浓精,肥美雌熟的乳肉,噗嗤,啪啪,齁啊啊,乳汁流落,淫水泛滥,潮吹喷水\n</Sexual_Writing>\n",
+            "injection_position": 1,
+            "injection_depth": 0
         }
     ],
     "prompt_order": [
@@ -354,6 +379,10 @@
                     "enabled": true
                 },
                 {
+                    "identifier": "cd061390-37e7-47dd-aa18-1e4aecb8ca35",
+                    "enabled": true
+                },
+                {
                     "identifier": "fa4b314b-ebf6-4c24-ad4a-c36445fa306c",
                     "enabled": true
                 },
@@ -387,11 +416,11 @@
                 },
                 {
                     "identifier": "nsfw",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "enhanceDefinitions",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "dialogueExamples",
@@ -455,7 +484,15 @@
     "api_url_scale": "",
     "show_external_models": true,
     "assistant_prefill": "",
+    "human_sysprompt_message": "Let's get started. Please generate your response based on the information and instructions provided above.",
     "use_ai21_tokenizer": false,
+    "use_google_tokenizer": false,
     "exclude_assistant": false,
-    "use_alt_scale": false
+    "claude_use_sysprompt": false,
+    "use_alt_scale": false,
+    "squash_system_messages": false,
+    "image_inlining": false,
+    "bypass_status_check": false,
+    "continue_prefill": false,
+    "seed": -1
 }
