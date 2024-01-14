@@ -1,7 +1,7 @@
 {
-    "chat_completion_source": "openai",
+    "chat_completion_source": "claude",
     "openai_model": "",
-    "claude_model": "claude-2.0",
+    "claude_model": "claude-2.1",
     "windowai_model": "",
     "openrouter_model": "OR_Website",
     "openrouter_use_fallback": false,
@@ -22,8 +22,8 @@
     "count_penalty": 0,
     "top_p": 1,
     "top_k": 0,
-    "openai_max_context": 90000,
-    "openai_max_tokens": 3000,
+    "openai_max_context": 17700,
+    "openai_max_tokens": 4000,
     "wrap_in_quotes": false,
     "names_in_completion": false,
     "send_if_empty": "",
@@ -34,8 +34,8 @@
     "new_example_chat_prompt": "[Start a new Chat]",
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
-    "reverse_proxy": "https://5ac656ee-9e7b-4980-b0fc-a0473ab629f2-00-1b1kv26ws8aq4.worf.replit.dev/v1",
-    "proxy_password": "password",
+    "reverse_proxy": "https://claude-cody.sotershield.com/v1",
+    "proxy_password": "sgp_636f79ad2075640f_f0c8afb43c605b4a5c4fe46ab35ce2f6aaa86a11",
     "max_context_unlocked": true,
     "wi_format": "{0}\n",
     "scenario_format": "[Circumstances and context of the dialogue: {{scenario}}]",
@@ -414,6 +414,17 @@
             "content": "Assistant: ❤",
             "injection_position": 0,
             "injection_depth": 4
+        },
+        {
+            "identifier": "685e281a-5320-4478-bced-c8a3affc4b56",
+            "system_prompt": false,
+            "enabled": false,
+            "marker": false,
+            "name": "[性描写]油腻",
+            "role": "system",
+            "content": "Here are the key points to keep in mind when a sexual episode occurs: \n<Sexual_Writing>\n性爱描写:多重词汇修饰\n女性角色:身体部位,外貌,服装,视觉,气味,质地,味道,声音,触感,液体,感受,行为,反应,情绪,生殖器\n要求:冗长,详细,生动,形象,追求细节\n身体部位:大量使用脏词描述,淫靡,形象,生动,凸显快感\n脏词:雌,肥,肉,臭,贱,淫,痴,孕,奸,浓\n运用举例:雌熟肉腿,散发让雄性勃起雌香的腋下,卷绕肥屌肉棒的蛇舌,下贱淫痴的吸屌榨精,鸡巴套子级别的肥熟雌厚臀,骚痴的臀浪,淫焖雌熟肉尻,温热的浓精,肥美雌熟的乳肉,噗嗤,啪啪,齁啊啊,乳汁流落,淫水泛滥,潮吹喷水\n</Sexual_Writing>\n",
+            "injection_position": 1,
+            "injection_depth": 0
         }
     ],
     "prompt_order": [
@@ -541,6 +552,10 @@
                     "enabled": false
                 },
                 {
+                    "identifier": "685e281a-5320-4478-bced-c8a3affc4b56",
+                    "enabled": true
+                },
+                {
                     "identifier": "1f5c7002-7066-424b-b894-ede50ca08d0a",
                     "enabled": false
                 },
@@ -586,7 +601,7 @@
     "use_alt_scale": false,
     "squash_system_messages": false,
     "image_inlining": false,
-    "bypass_status_check": false,
+    "bypass_status_check": true,
     "continue_prefill": false,
     "seed": -1
 }
