@@ -35,7 +35,7 @@
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
     "reverse_proxy": "https://claude-cody.sotershield.com/v1",
-    "proxy_password": "sgp_636f79ad2075640f_be7d0ce5df312d607333f8ecb56563bc9ecf36dd",
+    "proxy_password": "sgp_636f79ad2075640f_4e0a49fe3555e406459b44d96df6d2dd00eae45e",
     "max_context_unlocked": true,
     "wi_format": "{0}\n",
     "scenario_format": "[Circumstances and context of the dialogue: {{scenario}}]",
