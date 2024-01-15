@@ -1,7 +1,7 @@
 {
     "chat_completion_source": "claude",
     "openai_model": "claude-2.1",
-    "claude_model": "claude-2.0",
+    "claude_model": "claude-2.1",
     "windowai_model": "",
     "openrouter_model": "OR_Website",
     "openrouter_use_fallback": false,
@@ -35,7 +35,7 @@
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
     "reverse_proxy": "https://claude-cody.sotershield.com/v1",
-    "proxy_password": "sgp_636f79ad2075640f_4be888deac8aa86bcebd2eb5b3d44c46698ed9ef",
+    "proxy_password": "sgp_636f79ad2075640f_be7d0ce5df312d607333f8ecb56563bc9ecf36dd",
     "max_context_unlocked": true,
     "wi_format": "{0}\n",
     "scenario_format": "[Circumstances and context of the dialogue: {{scenario}}]",
@@ -660,7 +660,7 @@
     "use_alt_scale": false,
     "squash_system_messages": false,
     "image_inlining": false,
-    "bypass_status_check": true,
+    "bypass_status_check": false,
     "continue_prefill": false,
     "seed": -1
 }

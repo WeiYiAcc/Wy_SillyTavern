@@ -1,5 +1,5 @@
 {
-    "chat_completion_source": "openai",
+    "chat_completion_source": "claude",
     "openai_model": "claude-2.1",
     "claude_model": "claude-2.1",
     "windowai_model": "",
@@ -22,7 +22,7 @@
     "count_penalty": 0,
     "top_p": 1,
     "top_k": 0,
-    "openai_max_context": "17700",
+    "openai_max_context": 17700,
     "openai_max_tokens": 5000,
     "wrap_in_quotes": false,
     "names_in_completion": false,
@@ -35,7 +35,7 @@
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
     "reverse_proxy": "https://claude-cody.sotershield.com/v1",
-    "proxy_password": "sgp_636f79ad2075640f_f0c8afb43c605b4a5c4fe46ab35ce2f6aaa86a11",
+    "proxy_password": "sgp_636f79ad2075640f_be7d0ce5df312d607333f8ecb56563bc9ecf36dd",
     "max_context_unlocked": true,
     "wi_format": "\\n\\nDetails of the fictional world the RP is set in: \n<Details>\n{0}\n</Details>\\n\\n",
     "scenario_format": "[Circumstances and context of the dialogue: {{scenario}}]",
@@ -1029,7 +1029,7 @@
                 },
                 {
                     "identifier": "029a0207-76dd-499e-8038-d71c4fb7a8ad",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "30a0ffd5-93d0-4a6c-ab31-a3a23e3edd56",
@@ -1037,7 +1037,7 @@
                 },
                 {
                     "identifier": "a22a2345-a4e8-4b81-9c22-fa4e90b4a36e",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "2755f617-0dde-4574-b8f5-250fe4422fb1",

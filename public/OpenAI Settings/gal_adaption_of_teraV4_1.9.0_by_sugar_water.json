@@ -36,7 +36,7 @@
     "bias_preset_selected": "Default (none)",
     "reverse_proxy": "https://claude-cody.sotershield.com/v1",
     "proxy_password": "sgp_636f79ad2075640f_f0c8afb43c605b4a5c4fe46ab35ce2f6aaa86a11",
-    "max_context_unlocked": true,
+    "max_context_unlocked": false,
     "wi_format": "{0}\n",
     "scenario_format": "[Circumstances and context of the dialogue: {{scenario}}]",
     "personality_format": "[{{char}}'s personality: {{personality}}]",
@@ -601,7 +601,7 @@
     "use_alt_scale": false,
     "squash_system_messages": false,
     "image_inlining": false,
-    "bypass_status_check": true,
+    "bypass_status_check": false,
     "continue_prefill": false,
     "seed": -1
 }
