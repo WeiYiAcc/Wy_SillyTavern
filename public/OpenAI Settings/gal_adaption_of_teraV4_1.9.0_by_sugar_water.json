@@ -1,7 +1,7 @@
 {
-    "chat_completion_source": "claude",
-    "openai_model": "",
-    "claude_model": "claude-2.1",
+    "chat_completion_source": "openai",
+    "openai_model": "claude-2.1",
+    "claude_model": "claude-2.0",
     "windowai_model": "",
     "openrouter_model": "OR_Website",
     "openrouter_use_fallback": false,
@@ -22,8 +22,8 @@
     "count_penalty": 0,
     "top_p": 1,
     "top_k": 0,
-    "openai_max_context": 17700,
-    "openai_max_tokens": 4000,
+    "openai_max_context": 90000,
+    "openai_max_tokens": 3000,
     "wrap_in_quotes": false,
     "names_in_completion": false,
     "send_if_empty": "",
@@ -34,9 +34,9 @@
     "new_example_chat_prompt": "[Start a new Chat]",
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
-    "reverse_proxy": "https://claude-cody.sotershield.com/v1",
-    "proxy_password": "sgp_636f79ad2075640f_4e0a49fe3555e406459b44d96df6d2dd00eae45e",
-    "max_context_unlocked": false,
+    "reverse_proxy": "https://5ac656ee-9e7b-4980-b0fc-a0473ab629f2-00-1b1kv26ws8aq4.worf.replit.dev/v1",
+    "proxy_password": "password",
+    "max_context_unlocked": true,
     "wi_format": "{0}\n",
     "scenario_format": "[Circumstances and context of the dialogue: {{scenario}}]",
     "personality_format": "[{{char}}'s personality: {{personality}}]",
@@ -405,18 +405,7 @@
             "injection_depth": 4
         },
         {
-            "identifier": "89a5ca8c-ce82-4d4e-a416-a29bb23fe0a7",
-            "system_prompt": false,
-            "enabled": false,
-            "marker": false,
-            "name": "❤",
-            "role": "system",
-            "content": "Assistant: ❤",
-            "injection_position": 0,
-            "injection_depth": 4
-        },
-        {
-            "identifier": "685e281a-5320-4478-bced-c8a3affc4b56",
+            "identifier": "a0561ae1-d43d-49e7-9c2c-05295c76ddb0",
             "system_prompt": false,
             "enabled": false,
             "marker": false,
@@ -493,7 +482,7 @@
                 },
                 {
                     "identifier": "enhanceDefinitions",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "0b8ee749-f8ff-497e-bafd-3fc60a8a4180",
@@ -521,7 +510,7 @@
                 },
                 {
                     "identifier": "75da2486-f3f1-48c0-b6d2-7567d119898d",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "253a9be5-633f-44ef-a51f-5ea222408fb0",
@@ -552,7 +541,7 @@
                     "enabled": false
                 },
                 {
-                    "identifier": "685e281a-5320-4478-bced-c8a3affc4b56",
+                    "identifier": "a0561ae1-d43d-49e7-9c2c-05295c76ddb0",
                     "enabled": true
                 },
                 {
@@ -565,7 +554,7 @@
                 },
                 {
                     "identifier": "jailbreak",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "8fbc5ef3-743a-4127-8b0a-0eb835c64105",
@@ -582,16 +571,12 @@
                 {
                     "identifier": "0689cca0-ba74-494f-add4-533cddf9522d",
                     "enabled": false
-                },
-                {
-                    "identifier": "89a5ca8c-ce82-4d4e-a416-a29bb23fe0a7",
-                    "enabled": true
                 }
             ]
         }
     ],
     "api_url_scale": "",
-    "show_external_models": false,
+    "show_external_models": true,
     "assistant_prefill": "",
     "human_sysprompt_message": "Let's get started. Please generate your response based on the information and instructions provided above.",
     "use_ai21_tokenizer": false,

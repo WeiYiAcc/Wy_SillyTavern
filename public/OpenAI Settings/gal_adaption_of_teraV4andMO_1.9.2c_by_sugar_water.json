@@ -1,5 +1,5 @@
 {
-    "chat_completion_source": "claude",
+    "chat_completion_source": "openai",
     "openai_model": "claude-2.1",
     "claude_model": "claude-2.1",
     "windowai_model": "",
@@ -22,7 +22,7 @@
     "count_penalty": 0,
     "top_p": 1,
     "top_k": 0,
-    "openai_max_context": 17700,
+    "openai_max_context": 102400,
     "openai_max_tokens": 4000,
     "wrap_in_quotes": false,
     "names_in_completion": false,
@@ -34,8 +34,8 @@
     "new_example_chat_prompt": "[Start a new Chat]",
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
-    "reverse_proxy": "https://claude-cody.sotershield.com/v1",
-    "proxy_password": "sgp_636f79ad2075640f_4e0a49fe3555e406459b44d96df6d2dd00eae45e",
+    "reverse_proxy": "http://127.0.0.1:8444/v1",
+    "proxy_password": "password",
     "max_context_unlocked": true,
     "wi_format": "{0}\n",
     "scenario_format": "[Circumstances and context of the dialogue: {{scenario}}]",
@@ -642,7 +642,7 @@
                 },
                 {
                     "identifier": "0689cca0-ba74-494f-add4-533cddf9522d",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "68180239-ab94-4a79-86a2-13bd94a38511",

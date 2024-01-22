@@ -35,7 +35,7 @@
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
     "reverse_proxy": "https://5ac656ee-9e7b-4980-b0fc-a0473ab629f2-00-1b1kv26ws8aq4.worf.replit.dev/v1",
-    "proxy_password": "12345678",
+    "proxy_password": "password",
     "max_context_unlocked": true,
     "wi_format": "{0}\n",
     "scenario_format": "[Circumstances and context of the dialogue: {{scenario}}]",
