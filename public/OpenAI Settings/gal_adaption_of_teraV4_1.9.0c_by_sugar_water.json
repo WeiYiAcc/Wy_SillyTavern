@@ -22,7 +22,7 @@
     "count_penalty": 0,
     "top_p": 1,
     "top_k": 0,
-    "openai_max_context": 100000,
+    "openai_max_context": 23000,
     "openai_max_tokens": 4000,
     "wrap_in_quotes": false,
     "names_in_completion": false,
@@ -34,7 +34,7 @@
     "new_example_chat_prompt": "[Start a new Chat]",
     "continue_nudge_prompt": "[Continue the following message. Do not include ANY parts of the original message. Use capitalization and punctuation as if your reply is a part of the original message: {{lastChatMessage}}]",
     "bias_preset_selected": "Default (none)",
-    "reverse_proxy": "http://127.0.0.1:8444/v1",
+    "reverse_proxy": "https://5ac656ee-9e7b-4980-b0fc-a0473ab629f2-00-1b1kv26ws8aq4.worf.replit.dev/v1",
     "proxy_password": "password",
     "max_context_unlocked": true,
     "wi_format": "{0}\n",
@@ -600,11 +600,11 @@
                 },
                 {
                     "identifier": "1d52a419-767b-44d3-b1a0-577907e6eb49",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "f18bea1d-155b-4a4d-803f-2ceba4028dd9",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "1f5c7002-7066-424b-b894-ede50ca08d0a",
@@ -616,7 +616,7 @@
                 },
                 {
                     "identifier": "0689cca0-ba74-494f-add4-533cddf9522d",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "68180239-ab94-4a79-86a2-13bd94a38511",

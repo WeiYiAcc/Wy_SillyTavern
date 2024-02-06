@@ -22,7 +22,7 @@
     "count_penalty": 0,
     "top_p": 1,
     "top_k": 0,
-    "openai_max_context": 64000,
+    "openai_max_context": 23000,
     "openai_max_tokens": 4000,
     "wrap_in_quotes": false,
     "names_in_completion": false,

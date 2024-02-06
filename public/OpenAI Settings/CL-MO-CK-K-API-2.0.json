@@ -945,7 +945,7 @@
                 },
                 {
                     "identifier": "nsfw",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "09350092-23cd-4355-ae6c-7c3f8cae0624",
