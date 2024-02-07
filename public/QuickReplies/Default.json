@@ -1,52 +1,23 @@
 {
-    "version": 2,
     "name": "Default",
-    "disableSend": false,
-    "placeBeforeInput": false,
-    "injectInput": false,
-    "qrList": [
+    "quickReplyEnabled": true,
+    "quickReplySlots": [
         {
-            "id": 1,
+            "mes": "/?",
             "label": "HELP",
-            "title": "",
-            "message": "/?",
-            "contextList": [],
-            "preventAutoExecute": true,
-            "isHidden": false,
-            "executeOnStartup": false,
-            "executeOnUser": false,
-            "executeOnAi": false,
-            "executeOnChatChange": false,
-            "executeOnGroupMemberDraft": false
+            "enabled": true
         },
         {
-            "id": 2,
+            "mes": "/newchat",
             "label": "New Chat",
-            "title": "",
-            "message": "/newchat",
-            "contextList": [],
-            "preventAutoExecute": true,
-            "isHidden": false,
-            "executeOnStartup": false,
-            "executeOnUser": false,
-            "executeOnAi": false,
-            "executeOnChatChange": false,
-            "executeOnGroupMemberDraft": false
+            "enabled": true
         },
         {
-            "id": 3,
+            "mes": "/bgcol",
             "label": "Match UI to Background",
-            "title": "",
-            "message": "/bgcol",
-            "contextList": [],
-            "preventAutoExecute": true,
-            "isHidden": false,
-            "executeOnStartup": false,
-            "executeOnUser": false,
-            "executeOnAi": false,
-            "executeOnChatChange": false,
-            "executeOnGroupMemberDraft": false
+            "enabled": true
         }
     ],
-    "idIndex": 0
+    "numberOfSlots": 3,
+    "selectedPreset": "Default"
 }
