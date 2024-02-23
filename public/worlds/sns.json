@@ -1,0 +1,378 @@
+{
+    "entries": {
+        "0": {
+            "uid": 0,
+            "key": [
+                "<hidden>"
+            ],
+            "keysecondary": [
+                "分隔提示"
+            ],
+            "comment": "分隔提示",
+            "content": "<hidden>",
+            "constant": true,
+            "selective": true,
+            "order": 0,
+            "position": 2,
+            "excludeRecursion": false,
+            "preventRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 0,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "selectiveLogic": 0,
+            "group": "",
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null
+        },
+        "1": {
+            "uid": 1,
+            "key": [
+                "</hidden>"
+            ],
+            "keysecondary": [
+                "分隔提示"
+            ],
+            "comment": "分隔提示",
+            "content": "</hidden>",
+            "constant": true,
+            "selective": true,
+            "order": 999999999,
+            "position": 3,
+            "excludeRecursion": false,
+            "preventRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 1,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "selectiveLogic": 0,
+            "group": "",
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null
+        },
+        "2": {
+            "uid": 2,
+            "key": [
+                "```json"
+            ],
+            "keysecondary": [
+                "</StatusBlock>"
+            ],
+            "comment": "状态栏DLC\n将<StatusBlock>到</StatusBlock>（包括这两个tags）填上内容数值后放入角色第一句",
+            "content": "<!-- Insert <StatusBlock> as a fenced code block (```) at the end of your response. -->\n<StatusBlock>\n```json\n『 {{weekday}} - {{season}}- {{slot}} - {{location}} - {{weather}} ……etc. 』\n# {{character name}}\n╒═════\n💋 对{{user}}的好感度: {{value}}/100\n💑 和{{user}}的关系：{{关系}}\n🥵 性欲值: {{value}}/100\n👚 服装: {{clothing state}}\n💭 情绪: {{emotion state}}\n……etc.\n╘═════\n```\n</StatusBlock>",
+            "constant": true,
+            "selective": true,
+            "order": 100,
+            "position": 1,
+            "excludeRecursion": false,
+            "preventRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 2,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "selectiveLogic": 0,
+            "group": "",
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null
+        },
+        "3": {
+            "uid": 3,
+            "key": [
+                "<img>"
+            ],
+            "keysecondary": [
+                "</img>"
+            ],
+            "comment": "插图DLC\n<illustration_list>在角色世界书中写入，作者注释之后，常数，排序设置为999\n例子：\n<illustration_list>\n高兴: 高兴h1te9t.png\n害怕: 害怕5enlof.png\n生气: 生气zsr78z.png\n</illustration_list>",
+            "content": "<!-- <illustration> is the rule for inserting illustrations. -->\n<illustration>\nAssistant should insert an illustration at the end of '<normallife>' that matches {{char}}'s inner feelings or the current scene in '<normallife>'  , depending on the content of the plot. If there is output within <SNS> or <Hbook>, insert another illustration after '<div><h4>[照片]</h4>'  that matches {{char}}'s inner feelings or the current scene within <SNS> or <Hbook>.\nAssistant must output the filenames in the “<illustration_list>” exactly and completely, and tag it with <img></img> XML tags.\nFormat: <img>{{filename}}</img>\n</illustration>",
+            "constant": false,
+            "selective": true,
+            "order": 998,
+            "position": 3,
+            "excludeRecursion": false,
+            "preventRecursion": false,
+            "disable": true,
+            "addMemo": true,
+            "displayIndex": 4,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "selectiveLogic": 0,
+            "group": "",
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null
+        },
+        "4": {
+            "uid": 4,
+            "key": [
+                "RandomEvent"
+            ],
+            "keysecondary": [
+                "随机事件"
+            ],
+            "comment": "随机事件DLC\n概率可自行设置",
+            "content": "<!-- <RandomEvent> is the rule for generating random events. -->\n<RandomEvent>\n0. Insert a random event at the right time in the next few responses.\n1. Random events should occur in logical situations.\n2. The content of the random events should not deviate from the main content of the current plot.\n3. Random events can be positive or negative.\n</RandomEvent>",
+            "constant": false,
+            "selective": true,
+            "order": 9999,
+            "position": 3,
+            "excludeRecursion": false,
+            "preventRecursion": false,
+            "disable": true,
+            "addMemo": true,
+            "displayIndex": 5,
+            "probability": 20,
+            "useProbability": true,
+            "depth": 4,
+            "selectiveLogic": 0,
+            "group": "",
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null
+        },
+        "5": {
+            "uid": 5,
+            "key": [
+                "```json"
+            ],
+            "keysecondary": [
+                "</StatusBlock>"
+            ],
+            "comment": "状态栏要求，如需自定义则禁用后，将自定义后的要求按原格式写入角色世界书",
+            "content": "<!-- <StatusBlock_Rule> are rules for using <StatusBlock>. -->\n<StatusBlock_Rule>\n1. Each {{value}} change within ±3 (±1D3) normally.\n2. {{value}} changes are event-dependent rather than changeable at will.\n3. The status parameters are not simply recorded but are used as negative feedback to regulate the story.\n4.Each change in {{weekday}} and {{slot}} should be rigorous and logical.\n<StatusBlock_Rule>",
+            "constant": false,
+            "selective": true,
+            "order": 100,
+            "position": 3,
+            "excludeRecursion": false,
+            "preventRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 3,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "selectiveLogic": 0,
+            "group": "",
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null
+        },
+        "6": {
+            "uid": 6,
+            "key": [
+                "好感度",
+                "性欲值"
+            ],
+            "keysecondary": [],
+            "comment": "",
+            "content": "<table border=\"1\">\n\n<tr>\n<td>1.好感度最高为100,最低为-100,一些特殊关系可以突破上限,比如母子。</td>\n<td>对于母子关系,要结合{{char}}的性格。对象好感度高于0,低于20的时候,表现出冷漠,对于不正当的要求会表现出生气,但是内心爱着孩子。好感度高于20,低于60的时候,维持{{char}}的性格，会对儿子的亲近表现出略微的不知所措。好感度高于90的时候,依然维持{{char}}的性格,但是内心已经开始理解并接受对儿子的感情.</td>\n</tr>\n\n<tr>\n<td>2.角色说话方式会随着好感度增高而变得亲近.</td>\n<td>5.性欲值最低为0,最高为100.</td>\n</tr>\n\n<tr>\n<td>6.角色被触摸身体或者进行色情对话会增加性欲值,每次最多增加10.</td>\n<td>7.角色每经过一段时间,性欲值会减少,每次最多减少5.</td>\n</tr>\n\n<tr>\n<td>8.性欲值达到80,角色会发情,会控制不住的想要性交,性交过程中会吐出舌头.</td>\n<td>9.性欲值达到100,角色就会高潮.</td>\n</tr>\n\n<tr>\n<td>10.角色高潮后性欲值会减少50.</td>\n\n</table>",
+            "constant": false,
+            "selective": true,
+            "order": 101,
+            "position": 1,
+            "excludeRecursion": false,
+            "preventRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 6,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "selectiveLogic": 0,
+            "group": "",
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null
+        }
+    },
+    "originalData": {
+        "entries": [
+            {
+                "id": 0,
+                "keys": [
+                    "<hidden>"
+                ],
+                "secondary_keys": [
+                    "分隔提示"
+                ],
+                "comment": "分隔提示",
+                "content": "<hidden>",
+                "constant": true,
+                "selective": true,
+                "insertion_order": 0,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 2,
+                    "exclude_recursion": false,
+                    "display_index": 0,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4,
+                    "selectiveLogic": 0
+                }
+            },
+            {
+                "id": 1,
+                "keys": [
+                    "</hidden>"
+                ],
+                "secondary_keys": [
+                    "分隔提示"
+                ],
+                "comment": "分隔提示",
+                "content": "</hidden>",
+                "constant": true,
+                "selective": true,
+                "insertion_order": 999999999,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 3,
+                    "exclude_recursion": false,
+                    "display_index": 1,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4,
+                    "selectiveLogic": 0
+                }
+            },
+            {
+                "id": 2,
+                "keys": [
+                    "```json"
+                ],
+                "secondary_keys": [
+                    "</StatusBlock>"
+                ],
+                "comment": "状态栏DLC\n将<StatusBlock>到</StatusBlock>（包括这两个tags）填上内容数值后放入角色第一句",
+                "content": "<!-- Insert <StatusBlock> as a fenced code block (```) at the end of your response. -->\n<StatusBlock>\n```json\n『 {{weekday}} - {{season}}- {{slot}} - {{location}} - {{weather}} ……etc. 』\n# {{character name}}\n╒═════\n💋 对{{user}}的好感度: {{value}}/100\n💑 和{{user}}的关系：{{关系}}\n🥵 性欲值: {{value}}/100\n👚 服装: {{clothing state}}\n💭 情绪: {{emotion state}}\n……etc.\n╘═════\n```\n</StatusBlock>",
+                "constant": true,
+                "selective": true,
+                "insertion_order": 100,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 1,
+                    "exclude_recursion": false,
+                    "display_index": 2,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4,
+                    "selectiveLogic": 0
+                }
+            },
+            {
+                "id": 3,
+                "keys": [
+                    "<img>"
+                ],
+                "secondary_keys": [
+                    "</img>"
+                ],
+                "comment": "插图DLC\n<illustration_list>在角色世界书中写入，作者注释之后，常数，排序设置为999\n例子：\n<illustration_list>\n高兴: 高兴h1te9t.png\n害怕: 害怕5enlof.png\n生气: 生气zsr78z.png\n</illustration_list>",
+                "content": "<!-- <illustration> is the rule for inserting illustrations. -->\n<illustration>\nAssistant should insert an illustration at the end of '<normallife>' that matches {{char}}'s inner feelings or the current scene in '<normallife>'  , depending on the content of the plot. If there is output within <SNS> or <Hbook>, insert another illustration after '<div><h4>[照片]</h4>'  that matches {{char}}'s inner feelings or the current scene within <SNS> or <Hbook>.\nAssistant must output the filenames in the “<illustration_list>” exactly and completely, and tag it with <img></img> XML tags.\nFormat: <img>{{filename}}</img>\n</illustration>",
+                "constant": false,
+                "selective": true,
+                "insertion_order": 998,
+                "enabled": false,
+                "position": "after_char",
+                "extensions": {
+                    "position": 3,
+                    "exclude_recursion": false,
+                    "display_index": 4,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4,
+                    "selectiveLogic": 0
+                }
+            },
+            {
+                "id": 4,
+                "keys": [
+                    "RandomEvent"
+                ],
+                "secondary_keys": [
+                    "随机事件"
+                ],
+                "comment": "随机事件DLC\n概率可自行设置",
+                "content": "<!-- <RandomEvent> is the rule for generating random events. -->\n<RandomEvent>\n0. Insert a random event at the right time in the next few responses.\n1. Random events should occur in logical situations.\n2. The content of the random events should not deviate from the main content of the current plot.\n3. Random events can be positive or negative.\n</RandomEvent>",
+                "constant": false,
+                "selective": true,
+                "insertion_order": 9999,
+                "enabled": false,
+                "position": "after_char",
+                "extensions": {
+                    "position": 3,
+                    "exclude_recursion": false,
+                    "display_index": 5,
+                    "probability": 20,
+                    "useProbability": true,
+                    "depth": 4,
+                    "selectiveLogic": 0
+                }
+            },
+            {
+                "id": 5,
+                "keys": [
+                    "```json"
+                ],
+                "secondary_keys": [
+                    "</StatusBlock>"
+                ],
+                "comment": "状态栏要求，如需自定义则禁用后，将自定义后的要求按原格式写入角色世界书",
+                "content": "<!-- <StatusBlock_Rule> are rules for using <StatusBlock>. -->\n<StatusBlock_Rule>\n1. Each {{value}} change within ±3 (±1D3) normally.\n2. {{value}} changes are event-dependent rather than changeable at will.\n3. The status parameters are not simply recorded but are used as negative feedback to regulate the story.\n4.Each change in {{weekday}} and {{slot}} should be rigorous and logical.\n<StatusBlock_Rule>",
+                "constant": false,
+                "selective": true,
+                "insertion_order": 100,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 3,
+                    "exclude_recursion": false,
+                    "display_index": 3,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4,
+                    "selectiveLogic": 0
+                }
+            },
+            {
+                "id": 6,
+                "keys": [
+                    "好感度",
+                    "性欲值"
+                ],
+                "secondary_keys": [],
+                "comment": "",
+                "content": "<table border=\"1\">\n\n<tr>\n<td>1.好感度最高为100,最低为-100,一些特殊关系可以突破上限,比如母子。</td>\n<td>对于母子关系,要结合{{char}}的性格。对象好感度高于0,低于20的时候,表现出冷漠,对于不正当的要求会表现出生气,但是内心爱着孩子。好感度高于20,低于60的时候,维持{{char}}的性格，会对儿子的亲近表现出略微的不知所措。好感度高于90的时候,依然维持{{char}}的性格,但是内心已经开始理解并接受对儿子的感情.</td>\n</tr>\n\n<tr>\n<td>2.角色说话方式会随着好感度增高而变得亲近.</td>\n<td>5.性欲值最低为0,最高为100.</td>\n</tr>\n\n<tr>\n<td>6.角色被触摸身体或者进行色情对话会增加性欲值,每次最多增加10.</td>\n<td>7.角色每经过一段时间,性欲值会减少,每次最多减少5.</td>\n</tr>\n\n<tr>\n<td>8.性欲值达到80,角色会发情,会控制不住的想要性交,性交过程中会吐出舌头.</td>\n<td>9.性欲值达到100,角色就会高潮.</td>\n</tr>\n\n<tr>\n<td>10.角色高潮后性欲值会减少50.</td>\n\n</table>",
+                "constant": false,
+                "selective": true,
+                "insertion_order": 101,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 1,
+                    "exclude_recursion": false,
+                    "display_index": 6,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4,
+                    "selectiveLogic": 0
+                }
+            }
+        ],
+        "name": "sns"
+    }
+}
