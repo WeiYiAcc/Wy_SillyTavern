@@ -1,0 +1,21 @@
+Installing Node Modules...
+
+> sillytavern@1.11.3 postinstall
+> node post-install.js
+
+
+up to date in 2s
+
+79 packages are looking for funding
+  run `npm fund` for details
+Entering SillyTavern...
+Running from source
+SillyTavern 1.11.3 'main' (bff2ad7)
+Launching...
+[32mSillyTavern is listening on: http://0.0.0.0:8000/[39m
+
+0.0.0.0 means SillyTavern is listening on all network interfaces (Wi-Fi, LAN, localhost). If you want to limit it only to internal localhost (127.0.0.1), change the setting in config.yaml to "listen: false". Check "access.log" file in the SillyTavern directory if you want to inspect incoming connections.
+
+[33mNew connection from 172.233.82.124; User Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36
+[39m
+start.sh: line 34: 119386 Hangup                  node "$(dirname "$0")/server.js" "$@"

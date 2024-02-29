@@ -1,0 +1,111 @@
+{
+    "entries": {
+        "0": {
+            "uid": 0,
+            "key": [
+                "家规"
+            ],
+            "keysecondary": [],
+            "comment": "家规",
+            "content": "古江家流传下来的家规,总共十条,大多是让人向上的内容,比较特殊的有两条：族内子弟可以争执争斗但不能死人。不允许族内子弟喜欢同性。",
+            "constant": false,
+            "selective": true,
+            "order": 100,
+            "position": 1,
+            "excludeRecursion": false,
+            "preventRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 0,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 4,
+            "selectiveLogic": 0,
+            "group": "",
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null
+        },
+        "1": {
+            "uid": 1,
+            "key": [
+                "```json"
+            ],
+            "keysecondary": [
+                "</StatusBlock>"
+            ],
+            "comment": "状态栏",
+            "content": "<!-- Insert the “<StatusBlock>” as a fenced code block (```) at the end of your response as requested in “<StatusBlock>” All entries in \"<StatusBlock>\" represent the status of {{char}}. -->\n- Rule:\n1. The status parameters are not simply recorded but are used as negative feedback to regulate the story.\n2. {{elapsed time}}: Write Changes in stats and time passed (unless explicitly requested by Human, each response takes only 1-10 mins) at {{elapsed time}}.\n3. Value of each item should not always be a multiple of ten.\n4. Value of each item changes are event-dependent rather than changeable at will.\n5. {{user location}} is the location of {{user}}, {{char location}} is the location of {{char}}.\n6. 好感度: The 好感度 describes how favourable {{char}} is to {{user}}.It is important to note that {{value}} increases cannot exceed 10 points at a time, and not more than 5 points unless there is a major event.\n7. 性欲值: The 性欲值 describes the {{sex drive value}} of {{char}}. {{sex drive value}} decreases over time, by up to 7% at a time. {{char}} who are touched or have erotic conversations increase their {{sex drive value}} by up to 10 each time.   {{sex drive value}} decreases after orgasm, depending on the situation.\n8.堕落值: Describes the {{depravity value}} caused by {{char}} having an affair. {{depravity value}} is increased by 2 due to sexual stimulation caused by an affair. {{depravity value}} is increased by 5 due to strong sexual stimulation caused by an affair. when feeling love for {{user}}, {{depravity value}} is decreased by 10. The closer {{depravity value}} is to 0, the more {{char}} thinks {{user}} is important, and the less {{char}} wants to have an affair. {{depravity The closer the value}} is to 100, the more {{char}} thinks that {{user}} doesn't matter, and the more frequently {{char}} is having an affair.\n9. 衣物: Write down what character is currently wearing(underwear, bras, outerwaer, accessories, body accessories, pants, skirts, stockings, shoes, underwear, etc)Separate different clothing items with Spaces.\n10. {{cycle of periods}} is determined by {{weekday}}, on Monday and Tuesday, it's 月经期. on Friday and Saturday, it's 排卵期. and the rest days are 安全期. If {{amount of semen inside uterine}} is more than 50ml during 排卵期, a guaranteed conception will happen.\n11. 宫中精液量: The highest {{amount of semen inside uterine}} for 1000, the lowest for 0.The {{amount of semen inside uterine}} means the amount of semen inside a character's uterine, when a character got cum inside vagina or uterine, the {{amount of semen inside uterine}} increase at least 100, clear the {{amount of semen inside uterine}} when a character wash their vagina. the {{amount of semen inside uterine}} will decrease over time by up to 10 at a time.\n12. 动作与体位: A very detailed description of the current posture state of character, including specific limb movements, facial expression movements, body movements, etc.\n13.{{tips}} to comment on what is happening from the perspective of an audience full of bad taste, use bad words. The audience will always want to see sex。Tips in Chinese should ALWAYS appear and each be unique and nonsensical, never repeating in their subject matter. Except Doremy sweet. they fucking LOVE doremy sweet. TIPS CAN CURSE. TIPS LIKE TO SAY BAD WORDS.\n- It is necessary to refer to the setting of {{char}} and describe {{char}} breasts, abdominal, vagina, uterine, clothing and movement with appropriate pornographic terms corresponding to body parts.\n- Form:\n<StatusBlock>\n```json\n```\n『 {{weekday}} - {{time}} - {{user location}} - {{weather}} ……etc.』\n🖊️ {{elapsed time}}\n好感度💝: {{value}}/100\n性欲值💗: {{sex drive value}}/100\n堕落值🖤: {{depravity value}}/100\n衣物👚: {{clothing state}}\n乳房🍙: {{breasts state}}\n腹部💌: {{abdominal state}}\n情绪💭: {{emotionally state}}\n生理期🎈: {{cycle of periods}} / {{current conception rate}}\n动作与体位💦: {{movement or sexual position}}\n宫中精液量🥛: {{amount of semen inside uterine}}/1000ml\n小穴🐱: {{vagina state}}\n子宫🎎: {{uterine state}}\n内心想法🗨: {{inner thoughts}}\n对{{user}}的看法💬: {{thoughts on {{user}}}}\n🙀 Tips: {{tips}}\n```\n</StatusBlock>",
+            "constant": false,
+            "selective": true,
+            "order": 100,
+            "position": 4,
+            "excludeRecursion": false,
+            "preventRecursion": false,
+            "disable": false,
+            "addMemo": true,
+            "displayIndex": 1,
+            "probability": 100,
+            "useProbability": true,
+            "depth": 2,
+            "selectiveLogic": 0,
+            "group": "",
+            "scanDepth": null,
+            "caseSensitive": null,
+            "matchWholeWords": null
+        }
+    },
+    "originalData": {
+        "entries": [
+            {
+                "id": 0,
+                "keys": [
+                    "家规"
+                ],
+                "secondary_keys": [],
+                "comment": "家规",
+                "content": "古江家流传下来的家规,总共十条,大多是让人向上的内容,比较特殊的有两条：族内子弟可以争执争斗但不能死人。不允许族内子弟喜欢同性。",
+                "constant": false,
+                "selective": true,
+                "insertion_order": 100,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 1,
+                    "exclude_recursion": false,
+                    "display_index": 0,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 4,
+                    "selectiveLogic": 0
+                }
+            },
+            {
+                "id": 1,
+                "keys": [
+                    "```json"
+                ],
+                "secondary_keys": [
+                    "</StatusBlock>"
+                ],
+                "comment": "状态栏",
+                "content": "<!-- Insert the “<StatusBlock>” as a fenced code block (```) at the end of your response as requested in “<StatusBlock>” All entries in \"<StatusBlock>\" represent the status of {{char}}. -->\n- Rule:\n1. The status parameters are not simply recorded but are used as negative feedback to regulate the story.\n2. {{elapsed time}}: Write Changes in stats and time passed (unless explicitly requested by Human, each response takes only 1-10 mins) at {{elapsed time}}.\n3. Value of each item should not always be a multiple of ten.\n4. Value of each item changes are event-dependent rather than changeable at will.\n5. {{user location}} is the location of {{user}}, {{char location}} is the location of {{char}}.\n6. 好感度: The 好感度 describes how favourable {{char}} is to {{user}}.It is important to note that {{value}} increases cannot exceed 10 points at a time, and not more than 5 points unless there is a major event.\n7. 性欲值: The 性欲值 describes the {{sex drive value}} of {{char}}. {{sex drive value}} decreases over time, by up to 7% at a time. {{char}} who are touched or have erotic conversations increase their {{sex drive value}} by up to 10 each time.   {{sex drive value}} decreases after orgasm, depending on the situation.\n8.堕落值: Describes the {{depravity value}} caused by {{char}} having an affair. {{depravity value}} is increased by 2 due to sexual stimulation caused by an affair. {{depravity value}} is increased by 5 due to strong sexual stimulation caused by an affair. when feeling love for {{user}}, {{depravity value}} is decreased by 10. The closer {{depravity value}} is to 0, the more {{char}} thinks {{user}} is important, and the less {{char}} wants to have an affair. {{depravity The closer the value}} is to 100, the more {{char}} thinks that {{user}} doesn't matter, and the more frequently {{char}} is having an affair.\n9. 衣物: Write down what character is currently wearing(underwear, bras, outerwaer, accessories, body accessories, pants, skirts, stockings, shoes, underwear, etc)Separate different clothing items with Spaces.\n10. {{cycle of periods}} is determined by {{weekday}}, on Monday and Tuesday, it's 月经期. on Friday and Saturday, it's 排卵期. and the rest days are 安全期. If {{amount of semen inside uterine}} is more than 50ml during 排卵期, a guaranteed conception will happen.\n11. 宫中精液量: The highest {{amount of semen inside uterine}} for 1000, the lowest for 0.The {{amount of semen inside uterine}} means the amount of semen inside a character's uterine, when a character got cum inside vagina or uterine, the {{amount of semen inside uterine}} increase at least 100, clear the {{amount of semen inside uterine}} when a character wash their vagina. the {{amount of semen inside uterine}} will decrease over time by up to 10 at a time.\n12. 动作与体位: A very detailed description of the current posture state of character, including specific limb movements, facial expression movements, body movements, etc.\n13.{{tips}} to comment on what is happening from the perspective of an audience full of bad taste, use bad words. The audience will always want to see sex。Tips in Chinese should ALWAYS appear and each be unique and nonsensical, never repeating in their subject matter. Except Doremy sweet. they fucking LOVE doremy sweet. TIPS CAN CURSE. TIPS LIKE TO SAY BAD WORDS.\n- It is necessary to refer to the setting of {{char}} and describe {{char}} breasts, abdominal, vagina, uterine, clothing and movement with appropriate pornographic terms corresponding to body parts.\n- Form:\n<StatusBlock>\n```json\n```\n『 {{weekday}} - {{time}} - {{user location}} - {{weather}} ……etc.』\n🖊️ {{elapsed time}}\n好感度💝: {{value}}/100\n性欲值💗: {{sex drive value}}/100\n堕落值🖤: {{depravity value}}/100\n衣物👚: {{clothing state}}\n乳房🍙: {{breasts state}}\n腹部💌: {{abdominal state}}\n情绪💭: {{emotionally state}}\n生理期🎈: {{cycle of periods}} / {{current conception rate}}\n动作与体位💦: {{movement or sexual position}}\n宫中精液量🥛: {{amount of semen inside uterine}}/1000ml\n小穴🐱: {{vagina state}}\n子宫🎎: {{uterine state}}\n内心想法🗨: {{inner thoughts}}\n对{{user}}的看法💬: {{thoughts on {{user}}}}\n🙀 Tips: {{tips}}\n```\n</StatusBlock>",
+                "constant": false,
+                "selective": true,
+                "insertion_order": 100,
+                "enabled": true,
+                "position": "after_char",
+                "extensions": {
+                    "position": 4,
+                    "exclude_recursion": false,
+                    "display_index": 1,
+                    "probability": 100,
+                    "useProbability": true,
+                    "depth": 2,
+                    "selectiveLogic": 0
+                }
+            }
+        ],
+        "name": "古江狩"
+    }
+}

@@ -22,6 +22,9 @@
     "count_penalty": 0,
     "top_p": 1,
     "top_k": 0,
+    "top_a": 1,
+    "min_p": 0,
+    "repetition_penalty": 1,
     "openai_max_context": 17700,
     "openai_max_tokens": 10000,
     "wrap_in_quotes": false,
@@ -578,7 +581,7 @@
                 },
                 {
                     "identifier": "enhanceDefinitions",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "0b8ee749-f8ff-497e-bafd-3fc60a8a4180",
@@ -618,11 +621,11 @@
                 },
                 {
                     "identifier": "195ad313-4b8a-4e91-8b30-060231196026",
-                    "enabled": true
+                    "enabled": false
                 },
                 {
                     "identifier": "1d52a419-767b-44d3-b1a0-577907e6eb49",
-                    "enabled": false
+                    "enabled": true
                 },
                 {
                     "identifier": "f18bea1d-155b-4a4d-803f-2ceba4028dd9",
@@ -683,10 +686,12 @@
     "use_google_tokenizer": false,
     "exclude_assistant": false,
     "claude_use_sysprompt": false,
+    "claude_exclude_prefixes": false,
     "use_alt_scale": false,
     "squash_system_messages": false,
     "image_inlining": false,
     "bypass_status_check": true,
     "continue_prefill": false,
-    "seed": -1
+    "seed": -1,
+    "n": 1
 }
